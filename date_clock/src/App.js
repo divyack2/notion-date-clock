@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
 import Card from './components/Card'
 
 function App() {
   const today = new Date();
 
-  const [bgColor, setBgColor] = useState("#ADD8E6"); // Default to light blue
+  const storedColor = localStorage.getItem("bgColor") || "#ADD8E6";
+
+  const [bgColor, setBgColor] = useState(storedColor);
 
   const handleColorChange = (e) => {
-    setBgColor(e.target.value);
+    const newColor = e.target.value;
+    setBgColor(newColor);
+    localStorage.setItem("bgColor", newColor);
   };
 
   const getDayName = (date) => {
@@ -19,7 +23,7 @@ function App() {
   return (
       <div className="App">
         <Card text={getDayName(today)} bgColor={bgColor} textColor="white" />
-        <Card text={today.getDate()} bgColor={bgColor} textColor="white"/>
+        <Card text={today.getDate()} bgColor={bgColor} textColor="white" />
 
         <input
           type="text"
@@ -35,7 +39,6 @@ function App() {
           }}
         />
       </div>
-    
   );
 }
 

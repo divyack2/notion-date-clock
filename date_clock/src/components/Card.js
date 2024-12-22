@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ text, bgColor = "lightblue", textColor = "black" }) => {
+const Card = ({ text, bgColor, textColor }) => {
   const boxStyle = {
     backgroundColor: bgColor,
     color: textColor,
