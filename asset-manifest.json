@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/notion-date-clock/static/css/main.f855e6bc.css",
-    "main.js": "/notion-date-clock/static/js/main.79f0e69c.js",
+    "main.js": "/notion-date-clock/static/js/main.f5ccb2a3.js",
     "static/js/488.cace9d31.chunk.js": "/notion-date-clock/static/js/488.cace9d31.chunk.js",
     "index.html": "/notion-date-clock/index.html",
     "main.f855e6bc.css.map": "/notion-date-clock/static/css/main.f855e6bc.css.map",
-    "main.79f0e69c.js.map": "/notion-date-clock/static/js/main.79f0e69c.js.map",
+    "main.f5ccb2a3.js.map": "/notion-date-clock/static/js/main.f5ccb2a3.js.map",
     "488.cace9d31.chunk.js.map": "/notion-date-clock/static/js/488.cace9d31.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.79f0e69c.js"
+    "static/js/main.f5ccb2a3.js"
   ]
 }
